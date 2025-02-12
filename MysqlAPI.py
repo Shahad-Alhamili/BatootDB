@@ -9,7 +9,7 @@ def get_db():
     connection = mysql.connector.connect(
         host='127.0.0.1',
         user='root',
-        password='pass',
+        password='SHA12had34',
         database='Batoot'
     )
     return connection
