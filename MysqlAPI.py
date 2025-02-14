@@ -7,7 +7,7 @@ import mysql.connector
 # Database Connection
 def get_db():
     connection = mysql.connector.connect(
-        host='127.0.0.120',
+        host='0.0.0.0',
         user='remote',
         password='Sha12had@',
         database='batoot'
