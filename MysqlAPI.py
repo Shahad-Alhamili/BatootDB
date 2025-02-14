@@ -8,8 +8,8 @@ import mysql.connector
 def get_db():
     connection = mysql.connector.connect(
         host='127.0.0.120',
-        user='root',
-        password='SHA12had34',
+        user='remote',
+        password='Sha12had@',
         database='batoot'
     )
     return connection
