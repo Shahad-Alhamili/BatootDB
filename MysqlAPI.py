@@ -7,10 +7,10 @@ import mysql.connector
 # Database Connection
 def get_db():
     connection = mysql.connector.connect(
-        host='127.0.0.1',
+        host='127.0.0.120',
         user='root',
         password='SHA12had34',
-        database='Batoot'
+        database='batoot'
     )
     return connection
 
@@ -60,6 +60,10 @@ class ActivityResponse(BaseModel):
     audio: str
 
 # API Endpoints
+@app.get("/")
+def hello_page():
+    return {"message": "Welcome to Batoot DB!"}
+
 @app.post("/child/signup", response_model=ChildProfileResponse)
 def create_child_profile(profile: ChildProfileCreate):
     db = get_db()
